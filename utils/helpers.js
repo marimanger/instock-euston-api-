@@ -1,8 +1,14 @@
 const fs = require("fs");
 
-const readFile = (path) => {
-  const content = JSON.parse(fs.readFileSync(path));
-  return content;
+const readData = (path) => {
+  // Your route is relative to where index.js is
+  return JSON.parse(fs.readFileSync(path));
+};
+const writeData = (path,myData) => {
+  fs.writeFileSync(path, JSON.stringify(myData));
 };
 
-module.exports = readFile;
+module.exports ={
+   readData,
+   writeData,
+  }

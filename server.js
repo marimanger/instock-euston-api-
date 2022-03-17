@@ -2,7 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const router = express.Router();
 
-// const videosRoute = require("./routes/videosIdRoute");
+const inventoryRoutes = require("./routes/inventoryRoutes");
+const warehouseRoutes = require("./routes/warehouseRoutes");
 // const readFile = require("./utils/helpers");
 // require("dotenv").config();
 
@@ -13,7 +14,9 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use(router);
+app.use(warehouseRoutes);
+app.use(inventoryRoutes);
+
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
