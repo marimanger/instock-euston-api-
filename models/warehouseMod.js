@@ -1,7 +1,6 @@
 const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
-const helper = require("../utils/helpers")
-
+const helper = require("../utils/helpers");
 
 //used in helper function instead
 // const readData = () => {
@@ -23,19 +22,19 @@ const getAllData = () => {
 //   );
 //   return currProduct;
 // };
-// const createProduct = (productData) => {
-//   const productsData = readData();
-//   const newProduct = {
-//     id: uuidv4(),
-//     ...productData,
-//   };
-//   productsData.push(newProduct);
-//   writeData(productsData);
-//   return newProduct;
-// };
+const addNewWarehouse = (productData) => {
+  const productsData = helper.readData("./data/warehouses.json");
+  const newProduct = {
+    id: uuidv4(),
+    ...productData,
+  };
+  productsData.push(newProduct);
+  writeData(productsData);
+  return newProduct;
+};
 
 module.exports = {
   getAllData,
   // getIndividual,
-  // createProduct,
+  addNewWarehouse,
 };
