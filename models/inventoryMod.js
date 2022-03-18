@@ -6,6 +6,11 @@ const getAllData = () => {
     const inventoryData = helper.readData("./data/inventories.json");
     return inventoryData;
   };
+  const getSomeData = () => {
+    const someInventoryData = helper.readData("./data/inventories.json");
+    return someInventoryData;
+  };
+
 //used in helper function instead
 // const readData = () => {
 //   // Your route is relative to where index.js is
@@ -18,6 +23,7 @@ const getAllData = () => {
 
 module.exports = {
     getAllData,
+    getSomeData,
     // getIndividual,
     // createProduct,
   };

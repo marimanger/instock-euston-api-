@@ -8,6 +8,7 @@ const warehouseController = require("../controllers/warehouseCon");
 
 // examples
 router.get("/warehouse", warehouseController.getAllData);
+router.get("/warehouse/:id", warehouseController.getIndividual)
 
 // router.get("/products/:productId", productsController.getIndividual);
 

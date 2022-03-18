@@ -5,6 +5,23 @@ const getAllData = (_req, res) => {
   res.status(200).json(inventory);
 };
 
+const getSomeData = (_req, res) => {
+  const inventory = inventoryModel.getSomeData();
+  // console.log(inventory)
+  const someI=[]
+  for(i=0; i< inventory.length; i++){
+    someI[i]={
+      "itemName":inventory[i].itemName,
+      "category":inventory[i].category,
+      "quantity":inventory[i].quantity,
+      "id":inventory[i].id,
+      "warehouseID":inventory[i].warehouseID
+    }
+
+  }
+  res.status(200).json(someI);
+};
+
 // const getIndividual = (req, res) => {
 //   const currentID = req.params.productId;
 //   const currentProduct = productModel.getIndividual(currentID);
@@ -21,6 +38,7 @@ const getAllData = (_req, res) => {
 
 module.exports = {
   getAllData,
+  getSomeData,
   // getIndividual,
   // createProduct,
 };

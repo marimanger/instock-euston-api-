@@ -7,6 +7,7 @@ const inventoryController = require("../controllers/inventoryCon");
 
 // examples
 router.get("/inventory", inventoryController.getAllData);
+router.get("/inventorypage",inventoryController.getSomeData)
 
 // router.get("/products/:productId", productsController.getIndividual);
 

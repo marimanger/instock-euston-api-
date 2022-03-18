@@ -16,13 +16,14 @@ const getAllData = () => {
   const warehouseData = helper.readData("./data/warehouses.json");
   return warehouseData;
 };
-// const getIndividual = (currProductId) => {
-//   const productsData = readData();
-//   const currProduct = productsData.find(
-//     (product) => product.id === currProductId
-//   );
-//   return currProduct;
-// };
+const getIndividual = (currProductId) => {
+  const productsData = helper.readData("./data/warehouses.json");
+  const currProduct = productsData.find(
+    (product) => product.id === currProductId
+  );
+  console.log(currProduct)
+  return currProduct;
+};
 // const createProduct = (productData) => {
 //   const productsData = readData();
 //   const newProduct = {
@@ -36,6 +37,6 @@ const getAllData = () => {
 
 module.exports = {
   getAllData,
-  // getIndividual,
+  getIndividual,
   // createProduct,
 };
