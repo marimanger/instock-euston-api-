@@ -27,6 +27,11 @@ const getSomeData = (_req, res) => {
 //   const currentProduct = productModel.getIndividual(currentID);
 //   res.status(200).json(currentProduct);
 // };
+const getIndividualInventory = (req, res) => {
+  const currentID = req.params.inventoryId;
+  const currentInventory = inventoryModel.getIndividualInventory(currentID);
+  res.status(200).json(currentInventory);
+};
 
 // const createProduct = (req, res) => {
 //   if (!req.body.name || !req.body.price) {
@@ -40,5 +45,6 @@ module.exports = {
   getAllData,
   getSomeData,
   // getIndividual,
+  getIndividualInventory,
   // createProduct,
 };
