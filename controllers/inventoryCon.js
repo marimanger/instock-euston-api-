@@ -5,11 +5,11 @@ const getAllData = (_req, res) => {
   res.status(200).json(inventory);
 };
 
-// const getIndividual = (req, res) => {
-//   const currentID = req.params.productId;
-//   const currentProduct = productModel.getIndividual(currentID);
-//   res.status(200).json(currentProduct);
-// };
+const getIndividualInventory = (req, res) => {
+  const currentID = req.params.inventoryId;
+  const currentInventory = inventoryModel.getIndividualInventory(currentID);
+  res.status(200).json(currentInventory);
+};
 
 // const createProduct = (req, res) => {
 //   if (!req.body.name || !req.body.price) {
@@ -21,6 +21,6 @@ const getAllData = (_req, res) => {
 
 module.exports = {
   getAllData,
-  // getIndividual,
+  getIndividualInventory,
   // createProduct,
 };
