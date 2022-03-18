@@ -2,14 +2,10 @@ const router = require("express").Router();
 const fs = require("fs");
 const warehouseController = require("../controllers/warehouseCon");
 
-
-
-
-// examples
+// warehouse routes
 router.get("/warehouse", warehouseController.getAllData);
-router.get("/warehouse/:id", warehouseController.getIndividual)
+router.get("/warehouse/:id", warehouseController.getIndividual);
 router.post("/warehouse/add-new", warehouseController.addNewWarehouse);
-
-// router.get("/products/:productId", productsController.getIndividual);
+router.put("/warehouse/:id/edit", warehouseController.editWarehouse);
 
 module.exports = router;
