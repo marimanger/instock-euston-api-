@@ -15,16 +15,20 @@ const addNewWarehouse = (req, res) => {
     !contact.name ||
     !contact.position ||
     !contact.phone ||
-    !contact.email
+    contact.phone.length < 11 ||
+    contact.phone.length > 11 ||
+    !contact.email ||
+    contact.email.includes("@") === false
   ) {
     res
       .status(400)
       .send(
-        "You need to provide info for all the required fields to add a new Warehouse"
+        "You need to provide info for all the required fields to add a new Warehouse, Make sure the phone number has between 10 and 11 digits and the email address includes the '@'"
       );
+  } else {
+    const newWarehouse = warehouseModel.addNewWarehouse(req.body);
+    res.status(201).json(newWarehouse);
   }
-  const newWarehouse = warehouseModel.addNewWarehouse(req.body);
-  res.status(201).json(newWarehouse);
 };
 
 // const getIndividual = (req, res) => {
