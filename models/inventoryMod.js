@@ -13,7 +13,7 @@ const getAllData = () => {
 
 //used in helper function instead
 // const readData = () => {
-//   // Your route fis relative to where index.js is
+//   // Your route is relative to where index.js is
 //   return JSON.parse(fs.readFileSync("./data/warehouses.json"));
 // };
 // const writeData = (myData) => {
