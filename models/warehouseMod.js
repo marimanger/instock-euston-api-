@@ -10,6 +10,8 @@ const helper = require("../utils/helpers");
 // const writeData = (myData) => {
 //   fs.writeFileSync("./data/warehouses.json", JSON.stringify(myData));
 // };
+
+
 // const getIndividual = (currProductId) => {
 //   const productsData = readData();
 //   const currProduct = productsData.find(
@@ -18,10 +20,29 @@ const helper = require("../utils/helpers");
 //   return currProduct;
 // };
 
+
 const getAllData = () => {
   const warehouseData = helper.readData("./data/warehouses.json");
   return warehouseData;
 };
+const getIndividual = (currProductId) => {
+  const productsData = helper.readData("./data/warehouses.json");
+  const currProduct = productsData.find(
+    (product) => product.id === currProductId
+  );
+  console.log(currProduct)
+  return currProduct;
+};
+// const createProduct = (productData) => {
+//   const productsData = readData();
+//   const newProduct = {
+//     id: uuidv4(),
+//     ...productData,
+//   };
+//   productsData.push(newProduct);
+//   writeData(productsData);
+//   return newProduct;
+// };
 
 const addNewWarehouse = (newWarehouseData) => {
   const newWarehouse = {
@@ -37,6 +58,6 @@ const addNewWarehouse = (newWarehouseData) => {
 
 module.exports = {
   getAllData,
-  // getIndividual,
+  getIndividual,
   addNewWarehouse,
 };

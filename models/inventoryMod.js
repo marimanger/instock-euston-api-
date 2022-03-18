@@ -3,7 +3,16 @@ const fs = require("fs");
 const helper = require("../utils/helpers");
 
 const getAllData = () => {
-  const inventoryData = helper.readData("./data/inventories.json");
+    const inventoryData = helper.readData("./data/inventories.json");
+    return inventoryData;
+  };
+  const getSomeData = () => {
+    const someInventoryData = helper.readData("./data/inventories.json");
+    return someInventoryData;
+  };
+
+  const inventoryData = ()=>{
+     helper.readData("./data/inventories.json");
   return inventoryData;
 };
 
@@ -24,7 +33,13 @@ const getIndividualInventory = (currInverntoryId) => {
 // };
 
 module.exports = {
-  getAllData,
+    getAllData,
+    getSomeData,
+    // getIndividual,
+    // createProduct,
+
+  
+
   getIndividualInventory,
   // createProduct,
 };

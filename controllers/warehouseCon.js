@@ -5,6 +5,12 @@ const getAllData = (_req, res) => {
   res.status(200).json(warehouse);
 };
 
+const getIndividual = (req, res) => {
+  console.log(req.params.id)
+  const currentID = req.params.id;
+  const currentProduct = warehouseModel.getIndividual(currentID);
+  res.status(200).json(currentProduct);
+};
 const addNewWarehouse = (req, res) => {
   const { name, address, city, country, contact } = req.body;
   if (
@@ -39,6 +45,8 @@ const addNewWarehouse = (req, res) => {
 
 module.exports = {
   getAllData,
+  getIndividual,
+  // createProduct,
   // getIndividual,
   addNewWarehouse,
 };
