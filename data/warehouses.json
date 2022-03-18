@@ -1,0 +1,340 @@
+[
+  {
+    "id": "2922c286-16cd-4d43-ab98-c79f698aeab0",
+    "name": "Manhattan",
+    "address": "503 Broadway",
+    "city": "New York",
+    "country": "USA",
+    "contact": {
+      "name": "Parmin Aujla",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "paujla@instock.com"
+    }
+  },
+  {
+    "id": "5bf7bd6c-2b16-4129-bddc-9d37ff8539e9",
+    "name": "Washington",
+    "address": "33 Pearl Street SW",
+    "city": "Washington",
+    "country": "USA",
+    "contact": {
+      "name": "Greame Lyon",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "glyon@instock.com"
+    }
+  },
+  {
+    "id": "90ac3319-70d1-4a51-b91d-ba6c2464408c",
+    "name": "Jersey",
+    "address": "300 Main Street",
+    "city": "New Jersey",
+    "country": "USA",
+    "contact": {
+      "name": "Brad MacDonald",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "bmcdonald@instock.com"
+    }
+  },
+  {
+    "id": "bfc9bea7-66f1-44e9-879b-4d363a888eb4",
+    "name": "San Fran",
+    "address": "890 Brannnan Street",
+    "city": "San Francisco",
+    "country": "USA",
+    "contact": {
+      "name": "Gary Wong",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "gwong@instock.com"
+    }
+  },
+  {
+    "id": "89898957-04ba-4bd0-9f5c-a7aea7447963",
+    "name": "Santa Monica",
+    "address": "520 Broadway",
+    "city": "Santa Monica",
+    "country": "USA",
+    "contact": {
+      "name": "Sharon Ng",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "sng@instock.com"
+    }
+  },
+  {
+    "id": "ade0a47b-cee6-4693-b4cd-a7e6cb25f4b7",
+    "name": "Seattle",
+    "address": "1201 Third Avenue",
+    "city": "Seattle",
+    "country": "USA",
+    "contact": {
+      "name": "Daniel Bachu",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "dbachu@instock.com"
+    }
+  },
+  {
+    "id": "bb1491eb-30e6-4728-a5fa-72f89feaf622",
+    "name": "Miami",
+    "address": "2650 NW 5th Avenue",
+    "city": "Miami",
+    "country": "USA",
+    "contact": {
+      "name": "Alana Thomas",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "athomas@instock.com"
+    }
+  },
+  {
+    "id": "150a36cf-f38e-4f59-8e31-39974207372d",
+    "name": "Boston",
+    "address": "215 Essex Street",
+    "city": "Boston",
+    "country": "USA",
+    "contact": {
+      "name": "Vanessa Mendoza",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "vmendoza@instock.com"
+    }
+  },
+  {
+    "id": "5a7ab658-401b-4f5d-9bcc-497d49b39e1b",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "927eb29d-36dc-413f-beb9-6f08b96fa005",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "db2cc8a2-459d-41b7-88f4-cd7a50400613",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "07539244922",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "96d12ede-dbac-4d23-abcb-29c973553036",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492224234",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "553328cb-9c30-4539-bd31-001b95c1be81",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492224234",
+      "email": "tcinstock.com"
+    }
+  },
+  {
+    "id": "af874b03-f4a2-4cef-afb7-83222ff7443b",
+    "name": "",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492224234",
+      "email": "tcinstock.com"
+    }
+  },
+  {
+    "id": "f6ddcf11-8a6f-4092-94e5-240978fdb8c1",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492224234",
+      "email": "tcinstock.com"
+    }
+  },
+  {
+    "id": "fd7ab6e1-0d09-48f9-8553-edea0cde3d95",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492224234",
+      "email": "tcinstock.com"
+    }
+  },
+  {
+    "id": "9c82edaf-2d6b-4df4-b57c-87e3cfd35f77",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492224234",
+      "email": "tcinstock.com"
+    }
+  },
+  {
+    "id": "a009a741-86af-40e3-a11f-e9b1c33cb4ab",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492224234",
+      "email": "tcinstock.com"
+    }
+  },
+  {
+    "id": "d173f29f-2acb-4c98-a85f-01e19741d0c1",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "07539244922",
+      "email": "tcinstock.com"
+    }
+  },
+  {
+    "id": "cd17e8ea-eac8-4477-98fb-101642d1bbe0",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "07539244922",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "ed8cba7e-2260-4c85-b943-c134062ece87",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "07539244922",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "07e9a1d6-04df-47cb-89be-167336e9d8bb",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "07539244922",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "dc8e0f0e-c909-4146-a6c6-d43b809d221d",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "075392449222",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "bc883208-4c8c-453d-aeaa-0a6de6efb001",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "075392449",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "43703c82-089b-4332-9ead-1f7d7bf9231c",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "0753924492",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "160b69e2-6df9-4173-b6b8-3ade43cc4113",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "07539244922",
+      "email": "t@cinstock.com"
+    }
+  }
+]
