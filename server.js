@@ -1,7 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const router = express.Router();
-
 const inventoryRoutes = require("./routes/inventoryRoutes");
 const warehouseRoutes = require("./routes/warehouseRoutes");
 // const readFile = require("./utils/helpers");
@@ -17,12 +15,10 @@ app.use(cors());
 app.use(warehouseRoutes);
 app.use(inventoryRoutes);
 
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+app.get("/", (_req, res) => {
+  res.send("Welcome to the Euston InStock Server!");
 });
 
 app.listen(PORT, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`);
-  console.log("HELLO WORLD");
+  console.log(`Euston InStock Server listening at http://localhost:${PORT}`);
 });
