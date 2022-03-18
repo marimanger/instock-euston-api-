@@ -102,5 +102,31 @@
       "phone": "+1 (646) 123-1234",
       "email": "vmendoza@instock.com"
     }
+  },
+  {
+    "id": "5a7ab658-401b-4f5d-9bcc-497d49b39e1b",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "tc@instock.com"
+    }
+  },
+  {
+    "id": "927eb29d-36dc-413f-beb9-6f08b96fa005",
+    "name": "London",
+    "address": "The Shard",
+    "city": "London",
+    "country": "United Kingdom",
+    "contact": {
+      "name": "Tanaka Lusengo",
+      "position": "Warehouse Manager",
+      "phone": "+1 (646) 123-1234",
+      "email": "tc@instock.com"
+    }
   }
 ]

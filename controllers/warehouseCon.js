@@ -6,8 +6,22 @@ const getAllData = (_req, res) => {
 };
 
 const addNewWarehouse = (req, res) => {
-  if (!req.body.name || !req.body.price) {
-    res.status(400).send("You need to provude the name and price of the item");
+  const { name, address, city, country, contact } = req.body;
+  if (
+    !name ||
+    !address ||
+    !city ||
+    !country ||
+    !contact.name ||
+    !contact.position ||
+    !contact.phone ||
+    !contact.email
+  ) {
+    res
+      .status(400)
+      .send(
+        "You need to provide info for all the required fields to add a new Warehouse"
+      );
   }
   const newWarehouse = warehouseModel.addNewWarehouse(req.body);
   res.status(201).json(newWarehouse);
