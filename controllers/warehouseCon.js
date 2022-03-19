@@ -1,11 +1,13 @@
 const warehouseModel = require("../models/warehouseMod");
 const helper = require("../utils/helpers");
 
+// get all warehouse data
 const getAllData = (_req, res) => {
   const warehouse = warehouseModel.getAllData();
   res.status(200).json(warehouse);
 };
 
+// get a single warehouse
 const getIndividual = (req, res) => {
   console.log(req.params.id);
   const currentID = req.params.id;
@@ -13,6 +15,7 @@ const getIndividual = (req, res) => {
   res.status(200).json(currentProduct);
 };
 
+// add a new warehouse
 const addNewWarehouse = (req, res) => {
   const { name, address, city, country, contact } = req.body;
   if (
@@ -39,6 +42,7 @@ const addNewWarehouse = (req, res) => {
   }
 };
 
+// edit existing warehouse
 const editWarehouse = (req, res) => {
   const { name, address, city, country, contact } = req.body;
   if (
@@ -80,9 +84,26 @@ const editWarehouse = (req, res) => {
   }
 };
 
+// delete existing warehouse
+const deleteWarehouse = (req, res) => {
+  const found = helper.findById(warehouseModel.getAllData(), req.params.id);
+  if (found) {
+    const deletedWarehouse = warehouseModel.deleteWarehouseById(req.params.id);
+    res.status(200).json({
+      msg: "Warehouse has been successfully deleted",
+      warehouse: deletedWarehouse,
+    });
+  } else {
+    res.status(404).json({
+      errorMessage: `Warehouse ${req.params.name} with ID: ${req.params.id} not found`,
+    });
+  }
+};
+
 module.exports = {
   getAllData,
   getIndividual,
   addNewWarehouse,
   editWarehouse,
+  deleteWarehouse,
 };

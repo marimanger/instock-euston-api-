@@ -6,6 +6,7 @@ const getAllData = () => {
   const warehouseData = helper.readData("./data/warehouses.json");
   return warehouseData;
 };
+
 const getIndividual = (currProductId) => {
   const productsData = helper.readData("./data/warehouses.json");
   const currProduct = productsData.find(
@@ -35,9 +36,18 @@ const updateWarehouseById = (warehouseId, updateValues) => {
   return updatedWarehouse;
 };
 
+const deleteWarehouseById = (warehouseId) => {
+  const deletedWarehouse = getAllData().filter(
+    (warehouse) => warehouse.id !== warehouseId
+  );
+  helper.writeData("./data/warehouses.json", deletedWarehouse);
+  return deletedWarehouse;
+};
+
 module.exports = {
   getAllData,
   getIndividual,
   addNewWarehouse,
   updateWarehouseById,
+  deleteWarehouseById,
 };
