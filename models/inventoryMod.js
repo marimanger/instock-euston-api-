@@ -3,16 +3,16 @@ const fs = require("fs");
 const helper = require("../utils/helpers");
 
 const getAllData = () => {
-    const inventoryData = helper.readData("./data/inventories.json");
-    return inventoryData;
-  };
-  const getSomeData = () => {
-    const someInventoryData = helper.readData("./data/inventories.json");
-    return someInventoryData;
-  };
+  const inventoryData = helper.readData("./data/inventories.json");
+  return inventoryData;
+};
+const getSomeData = () => {
+  const someInventoryData = helper.readData("./data/inventories.json");
+  return someInventoryData;
+};
 
-  const inventoryData = ()=>{
-     helper.readData("./data/inventories.json");
+const inventoryData = () => {
+  helper.readData("./data/inventories.json");
   return inventoryData;
 };
 
@@ -23,23 +23,18 @@ const getIndividualInventory = (currInverntoryId) => {
   );
   return currInventory;
 };
-//used in helper function instead
-// const readData = () => {
-//   // Your route is relative to where index.js is
-//   return JSON.parse(fs.readFileSync("./data/warehouses.json"));
-// };
-// const writeData = (myData) => {
-//   fs.writeFileSync("./data/warehouses.json", JSON.stringify(myData));
-// };
+
+const deleteInventoryById = (inventoryId) => {
+  const deletedInventory = getAllData().filter(
+    (inventory) => inventory.id !== inventoryId
+  );
+  helper.writeData("./data/inventories.json", deletedInventory);
+  return deletedInventory;
+};
 
 module.exports = {
-    getAllData,
-    getSomeData,
-    // getIndividual,
-    // createProduct,
-
-  
-
+  getAllData,
+  getSomeData,
   getIndividualInventory,
-  // createProduct,
+  deleteInventoryById,
 };

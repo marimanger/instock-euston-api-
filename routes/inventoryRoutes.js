@@ -11,6 +11,6 @@ router.get(
   "/inventory/:inventoryId",
   inventoryController.getIndividualInventory
 );
-router.post("/inventory/add-new", warehouseController.addNewWarehouse);
+router.post("/warehouseq  a``/add-new", warehouseController.addNewWarehouse);
 
 module.exports = router;
