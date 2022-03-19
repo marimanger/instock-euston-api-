@@ -5,12 +5,11 @@ const inventoryController = require("../controllers/inventoryCon");
 
 // examples
 router.get("/inventory", inventoryController.getAllData);
-router.get("/inventorypage",inventoryController.getSomeData)
+router.get("/inventorypage", inventoryController.getSomeData);
 
 router.get(
   "/inventory/:inventoryId",
   inventoryController.getIndividualInventory
 );
-router.post("/warehouseq  a``/add-new", warehouseController.addNewWarehouse);
 
 module.exports = router;
