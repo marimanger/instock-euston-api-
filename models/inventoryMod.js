@@ -38,6 +38,14 @@ const addNewInventory = (newInventoryData) => {
   return newInventory;
 };
 
+const updateInventoryById = (inventoryId, updateValues) => {
+  const updatedInventory = getAllData().map((inventory) =>
+    inventory.id === inventoryId ? { ...inventory, ...updateValues } : inventory
+  );
+  helper.writeData("./data/inventories.json", updatedInventory);
+  return updatedInventory;
+};
+
 const deleteInventoryById = (inventoryId) => {
   const deletedInventory = getAllData().filter(
     (inventory) => inventory.id !== inventoryId
@@ -52,4 +60,5 @@ module.exports = {
   getIndividualInventory,
   deleteInventoryById,
   addNewInventory,
+  updateInventoryById,
 };

@@ -710,11 +710,11 @@
   },
   {
     "id": "ad76b909-8be0-48b6-9503-91df77af2fa3",
-    "itemName": "Test",
-    "description": "Mariia Test",
-    "category": "test",
+    "itemName": "TestEdit123",
+    "description": "Mariia TestEdit123",
+    "category": "test,Edit",
     "status": "In Stock",
-    "quantity": 1,
-    "warehouseName": "Manhattan"
+    "quantity": 1000,
+    "warehouseName": "Test"
   }
 ]
