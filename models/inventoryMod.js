@@ -24,6 +24,28 @@ const getIndividualInventory = (currInverntoryId) => {
   return currInventory;
 };
 
+//Add new Inventory
+
+const addNewInventory = (newInventoryData) => {
+  const newInventory = {
+    id: uuidv4(),
+    ...newInventoryData,
+  };
+
+  const inventoryFileContent = helper.readData("./data/inventories.json");
+  inventoryFileContent.push(newInventory);
+  helper.writeData("./data/inventories.json", inventoryFileContent);
+  return newInventory;
+};
+
+const updateInventoryById = (inventoryId, updateValues) => {
+  const updatedInventory = getAllData().map((inventory) =>
+    inventory.id === inventoryId ? { ...inventory, ...updateValues } : inventory
+  );
+  helper.writeData("./data/inventories.json", updatedInventory);
+  return updatedInventory;
+};
+
 const deleteInventoryById = (inventoryId) => {
   const deletedInventory = getAllData().filter(
     (inventory) => inventory.id !== inventoryId
@@ -37,4 +59,6 @@ module.exports = {
   getSomeData,
   getIndividualInventory,
   deleteInventoryById,
+  addNewInventory,
+  updateInventoryById,
 };
