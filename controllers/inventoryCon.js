@@ -28,31 +28,49 @@ const getIndividualInventory = (req, res) => {
   res.status(200).json(currentInventory);
 };
 
+// add a new warehouse
 const addNewInventory = (req, res) => {
-  const { name, description, city, country, contact } = req.body;
+  const { itemName, description, category, status, quantity, warehouseName } =
+    req.body;
   if (
-    !name ||
+    !itemName ||
     !description ||
-    !city ||
-    !country ||
-    !contact.name ||
-    !contact.position ||
-    !contact.phone ||
-    contact.phone.length < 11 ||
-    contact.phone.length > 11 ||
-    !contact.email ||
-    contact.email.includes("@") === false
+    !category ||
+    !status ||
+    !quantity ||
+    !warehouseName
   ) {
     res
       .status(400)
       .send(
-        "You need to provide info for all the required fields to add a new Warehouse, Make sure the phone number has between 10 and 11 digits and the email address includes the '@'"
+        "You need to provide info for all the required fields to add a new Inventory."
       );
   } else {
-    const newWarehouse = warehouseModel.addNewWarehouse(req.body);
-    res.status(201).json(newWarehouse);
+    const newInventory = inventoryModel.addNewInventory(req.body);
+    res.status(201).json(newInventory);
   }
 };
+
+// const addNewInventory = (req, res) => {
+//   const newVideo = {
+//     id: uniqid(),
+//     title: req.body.title,
+//     warehouseName: req.body.warehouseName,
+//     description: req.body.description,
+//     status: req.body.status,
+//     quantity: req.body.quantity,
+//     warehouseName: req.body.warehouseName,
+//   };
+//   res
+//     .status(400)
+//     .send(
+//       "You need to provide info for all the required fields to add a new Warehouse, Make sure the phone number has between 10 and 11 digits and the email address includes the '@'"
+//     );
+//   {
+//     const newInventory = inventoryModel.addNewInventory(req.body);
+//     res.status(201).json(newInventory);
+//   }
+// };
 
 // delete existing inventory item
 
@@ -76,4 +94,5 @@ module.exports = {
   getSomeData,
   getIndividualInventory,
   deleteInventoryItem,
+  addNewInventory,
 };

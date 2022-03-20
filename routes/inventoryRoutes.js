@@ -12,4 +12,6 @@ router.get(
   inventoryController.getIndividualInventory
 );
 
+router.post("/inventory/add-new", inventoryController.addNewInventory);
+
 module.exports = router;
