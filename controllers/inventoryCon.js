@@ -8,7 +8,6 @@ const getAllData = (_req, res) => {
 
 const getSomeData = (_req, res) => {
   const inventory = inventoryModel.getSomeData();
-  // console.log(inventory)
   const someI = [];
   for (i = 0; i < inventory.length; i++) {
     someI[i] = {
@@ -54,6 +53,7 @@ const addNewInventory = (req, res) => {
 // edit existing warehouse
 const editInventory = (req, res) => {
   const { itemName, description, category, status, warehouseName } = req.body;
+
   if (!itemName || !description || !category || !status || !warehouseName) {
     res
       .status(400)
