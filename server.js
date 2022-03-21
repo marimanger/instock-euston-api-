@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const inventoryRoutes = require("./routes/inventoryRoutes");
 const warehouseRoutes = require("./routes/warehouseRoutes");
-// require("dotenv").config();
 
 const app = express();
 const PORT = 8080 || 4040;
