@@ -25,7 +25,6 @@ const getIndividualInventory = (currInverntoryId) => {
 };
 
 //Add new Inventory
-
 const addNewInventory = (newInventoryData) => {
   const newInventory = {
     id: uuidv4(),
@@ -53,6 +52,14 @@ const deleteInventoryById = (inventoryId) => {
   helper.writeData("./data/inventories.json", deletedInventory);
   return deletedInventory;
 };
+
+// const deleteInventoryById = (inventoryId) => {
+//   const inventoryData = helper.readData("./data/inventories.json");
+//   const currInventory = inventoryData.find(
+//     (inventory) => inventory.id === inventoryId
+//   );
+//   return currInventory;
+// };
 
 module.exports = {
   getAllData,
