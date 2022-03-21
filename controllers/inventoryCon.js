@@ -28,7 +28,7 @@ const getIndividualInventory = (req, res) => {
   res.status(200).json(currentInventory);
 };
 
-// add a new warehouse
+// add a new inventory
 const addNewInventory = (req, res) => {
   const { itemName, description, category, status, quantity, warehouseName } =
     req.body;
@@ -82,18 +82,19 @@ const editInventory = (req, res) => {
 };
 
 // delete existing inventory item
-
 const deleteInventoryItem = (req, res) => {
   const found = helper.findById(inventoryModel.getAllData(), req.params.id);
+  console.log(found);
+  console.log(req.params.id);
   if (found) {
-    const deletedInventory = inventoryModel.deleteInventoryById(req.params.id);
+    const NewInventoryList = inventoryModel.deleteInventoryById(req.params.id);
     res.status(200).json({
       msg: "Inventory item has been successfully deleted",
-      Inventory: deletedInventory,
+      Inventory: NewInventoryList,
     });
   } else {
     res.status(404).json({
-      errorMessage: `Inventory item ${req.params.name} with ID: ${req.params.id} not found`,
+      errorMessage: `Inventory item with ID: ${req.params.id} not found`,
     });
   }
 };

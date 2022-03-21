@@ -26,8 +26,6 @@ const addNewWarehouse = (req, res) => {
     !contact.name ||
     !contact.position ||
     !contact.phone ||
-    contact.phone.length < 11 ||
-    contact.phone.length > 11 ||
     !contact.email ||
     contact.email.includes("@") === false
   ) {
@@ -53,8 +51,6 @@ const editWarehouse = (req, res) => {
     !contact.name ||
     !contact.position ||
     !contact.phone ||
-    contact.phone.length < 11 ||
-    contact.phone.length > 11 ||
     !contact.email ||
     contact.email.includes("@") === false
   ) {
@@ -87,15 +83,17 @@ const editWarehouse = (req, res) => {
 // delete existing warehouse
 const deleteWarehouse = (req, res) => {
   const found = helper.findById(warehouseModel.getAllData(), req.params.id);
+  console.log(found);
+  console.log(req.params.id);
   if (found) {
-    const deletedWarehouse = warehouseModel.deleteWarehouseById(req.params.id);
+    const NewWarehouseList = warehouseModel.deleteWarehouseById(req.params.id);
     res.status(200).json({
       msg: "Warehouse has been successfully deleted",
-      warehouse: deletedWarehouse,
+      warehouse: NewWarehouseList,
     });
   } else {
     res.status(404).json({
-      errorMessage: `Warehouse ${req.params.name} with ID: ${req.params.id} not found`,
+      errorMessage: `Warehouse with ID: ${req.params.id} not found`,
     });
   }
 };

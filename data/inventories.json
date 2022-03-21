@@ -698,23 +698,5 @@
     "category": "Health",
     "status": "Out of Stock",
     "quantity": 0
-  },
-  {
-    "id": "81c55863-9a92-4d88-a3c6-54fa98785ce6",
-    "itemName": "test",
-    "description": "text",
-    "category": "test",
-    "status": "In Stock",
-    "quantity": 500,
-    "warehouseName": "Manhattan"
-  },
-  {
-    "id": "ad76b909-8be0-48b6-9503-91df77af2fa3",
-    "itemName": "TestEdit123",
-    "description": "Mariia TestEdit123",
-    "category": "test,Edit",
-    "status": "In Stock",
-    "quantity": 1000,
-    "warehouseName": "Test"
   }
 ]

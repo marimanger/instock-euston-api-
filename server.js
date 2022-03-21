@@ -2,11 +2,10 @@ const express = require("express");
 const cors = require("cors");
 const inventoryRoutes = require("./routes/inventoryRoutes");
 const warehouseRoutes = require("./routes/warehouseRoutes");
-// const readFile = require("./utils/helpers");
 // require("dotenv").config();
 
 const app = express();
-const PORT = 8080;
+const PORT = 8080 || 4040;
 
 app.use(express.json());
 
